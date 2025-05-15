@@ -1,0 +1,90 @@
+/* quiz.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+}
+
+.outer {
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.outer .inner {
+    padding: 25px;
+    width: 100%;
+}
+
+.outer .inner h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.outer .inner .row {
+    margin-top: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+#btn {
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    background-color: #00bcd4;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 600px) {
+    .outer {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .outer .inner {
+        padding: 20px 15px;
+    }
+
+    .outer .inner h3 {
+        font-size: 20px;
+    }
+
+    .outer .inner .row {
+        font-size: 16px;
+    }
+
+    #btn {
+        font-size: 16px;
+        height: 38px;
+    }
+}
